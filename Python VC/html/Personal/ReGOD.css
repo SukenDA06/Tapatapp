@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+}
+h1{
+    text-align: center;
+}
+.grid-container{
+    grid-template-areas: 'r1 r2 r3 r4 r5 r6 r7';
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    display: grid;
+
+}
+.r1{
+    grid-area: r1;
+    transform: translate(7px);
+}
+.r2{
+    grid-area: r2;
+    transform: translate(16px);
+}
+.r3{
+    grid-area: r3;
+    transform: translate(28px);
+}
+.r4{
+    grid-area: r4;
+    transform: translate(38px);
+}
+.r5{
+    grid-area: r5;
+    transform: translate(34px);
+}
+.r6{
+    grid-area: r6;
+    transform: translate(28px);
+}
+.r7{
+    grid-area: r7;
+    transform: translate(10px);
+}
+.r1, .r2, .r3, .r4, .r5, .r6, .r7{
+    transition: 0.5s;
+}
+.r1:hover, .r2:hover, .r3:hover, .r4:hover, .r5:hover, .r6:hover, .r7:hover{
+    background-color: rgb(36, 36, 36);
+    color: black;
+    opacity: 50%;
+}
+.r2:hover, .r3:hover, .r4:hover, .r5:hover, .r6:hover{
+    padding-bottom: 10px;
+}
+.r7:hover{
+    padding-right: 10px;
+}
+.r1:hover{
+    padding-left: 10px
+}
+.rt{
+    text-decoration: none;
+    color: inherit;
+}
