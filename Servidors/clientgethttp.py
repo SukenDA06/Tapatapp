@@ -13,5 +13,3 @@ response = requests.post(url, data=data, headers=headers)
 # Print the response
 print("Status Code:", response.status_code)
 print("Response Body:", response.text)
-
-#1
