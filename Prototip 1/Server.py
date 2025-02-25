@@ -41,9 +41,19 @@ else:
 
 app = Flask(__name__)
 
-@app.route('/tapatapp/getuser', methods=['GET'])
+@app.route('/prototip1/getuser', methods=['GET'])
 def get_User():
-    return "Soufi :>"
+    username = request.args.get('username')
+    user = daoUser.getUserByUsername(username)
+    if user:
+        return jsonify({
+            "id": user.id,
+            "username": user.username,
+            "password": user.password,
+            "email": user.email
+        }), 200
+    else:
+        return jsonify({"error": "User not found"}), 400
 
 
 if __name__ == '__main__':
