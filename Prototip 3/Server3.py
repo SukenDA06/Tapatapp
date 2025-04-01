@@ -1,5 +1,5 @@
-import dadesServer2 as dades
-from dadesServer2 import Account, Infant, Tap, Position, Condition, Therapy
+import dadesServer3 as dades
+from dadesServer3 import Account, Infant, Tap, Position, Condition, Therapy
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
